@@ -258,11 +258,110 @@ public class Nokia_C13{
                     5. Phone line in use
                     6. Automatic answer
                    -------------------------- """;  
+                    System.out.println(menu);
+                    System.out.print("Enter option: ");
+                    menuOption = input.nextInt();
+                        switch (menuOption){
+                            case 1 -> {System.out.println("Automatic redial");}
+                            case 2 -> {System.out.println("Speed dialing");}
+                            case 3 -> {System.out.println("Call waiting");}
+                            case 4 -> {System.out.println("Own number");}
+                            case 5 -> {System.out.println("Phone line in use");}
+                            case 6 -> {System.out.println("Automatic answer");}
+                            default -> {System.out.println("Enter a valid number");}
+                       }
                     }
+                    case 2 -> {
+                       menu = """ 
+                      -----Phone settings-----
+
+                        1. Language
+                        2. Cell info display
+                        3. Welcome note
+                        4. Network selection
+                        5. Lights2
+                        6. Confirm SIM service actions
+                      ---------------------------------- """; 
+                        System.out.println(menu);
+                        System.out.print("Enter option: ");
+                        menuOption = input.nextInt();
+
+                           switch (menuOption){
+                            case 1 -> {System.out.println("Language");}
+                            case 2 -> {System.out.println("Cell info display");}
+                            case 3 -> {System.out.println("Welcome note");}
+                            case 4 -> {System.out.println("Network Selection");}
+                            case 5 -> {System.out.println("Lights2");}
+                            case 6 -> {System.out.println("Confirm SIM service actions");}
+                            
+                            }
+                    }
+                    case 3 -> {
+                        menu = """ 
+                  ------Security settings---------
+
+                    1. PIN code request
+                    2. Call barring service
+                    3. Fixed dialling
+                    4. Closed user group
+                    5. Phone security
+                    6. Change access codes
+
+                  --------------------------- """;
+                    System.out.println(menu);
+                    System.out.print("Enter option: ");
+                    menuOption = input.nextInt();
+
+                        switch (menuOption){
+                            case 1 -> {System.out.println("PIN code request");}
+                            case 2 -> {System.out.println("Call Barring service");}
+                            case 3 -> {System.out.println("Fixed dialling");}
+                            case 4 -> {System.out.println("Closed user group");}
+                            case 5 -> {System.out.println("Phone security");}
+                            case 6 -> {System.out.println("Change access codes");}
+                            
+                            }
+
+                    }
+                    case 4 -> {System.out.println("Restor factory setting");} 
+
                 }
     
                
         }
+        case 7 -> {System.out.println("Call Divert");}
+        case 8 -> {System.out.println("Games");}
+        case 9 -> {System.out.println("Calculator");}
+        case 10 -> {System.out.println("Reminders");} 
+        case 11 -> {
+             menu = """ 
+
+              -----Clock------
+            1. Alarm clock
+            2. Clock settings
+            3. Date setting
+            4. Stopwatch
+            5. Countdown timer
+            6. Auto update of date and time
+
+           ---------------------------------- """;
+            System.out.println(menu);
+            System.out.print("Enter option: ");
+            menuOption = input.nextInt(); 
+
+               switch (menuOption){
+                            case 1 -> {System.out.println("Alarm clock");}
+                            case 2 -> {System.out.println("Clock setting");}
+                            case 3 -> {System.out.println("Date setting");}
+                            case 4 -> {System.out.println("Stopwatch");}
+                            case 5 -> {System.out.println("Count down timer");}
+                            case 6 -> {System.out.println("Auto update date and time");}
+                            
+                            }
+        }
+        case 12 -> {System.out.println("Profiles");}
+        case 13 -> {System.out.println("Sim Services");}
+        
        
     }
 
